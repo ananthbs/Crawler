@@ -18,7 +18,6 @@ componentDidMount(){
 }
 
 componentWillReceiveProps(newProps){
-  debugger
   if(!this.props.state?.crawlingStatus?.success && newProps.state?.crawlingStatus?.success){
     this.props.dispatch(this.props.getAllClientsData())
   }
